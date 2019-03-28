@@ -67,6 +67,7 @@ namespace JazzFuzz.Services.Presenters
                 }
                 else if (character.Equals(' '))
                 {
+                    Console.Write(' ');
                     Thread.Sleep(3*TimeUnitMs);
                 }
             }
