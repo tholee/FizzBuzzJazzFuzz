@@ -37,6 +37,11 @@ namespace JazzFuzz.Services.Presenters
             PlayMorseWord(morseWord);
         }
 
+        private void DisplayOriginalValue(string value)
+        {
+            Console.Write(value + ": ");
+        }
+
         private string TranslateMorse(string value)
         {
             var sb = new StringBuilder();
@@ -45,11 +50,6 @@ namespace JazzFuzz.Services.Presenters
                 sb.Append(_morseLookupDictionary[character] + " ");
             }
             return sb.ToString();
-        }
-
-        private void DisplayOriginalValue(string value)
-        {
-            Console.Write(value + ": ");
         }
 
         private void PlayMorseWord(string morseWord)
