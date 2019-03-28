@@ -26,7 +26,8 @@ namespace JazzFuzz.Services.Presenters
             foreach (var value in values)
             {
                 TranslateAndPlayMorse(value);
-            }           
+            }
+            Console.ReadLine();
         }
 
         private void TranslateAndPlayMorse(string value)
