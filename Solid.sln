@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz", "FizzBuzz\FizzBuzz.csproj", "{E5B4AF57-68F4-484F-A624-721A592FEDFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzzTest", "FizzBuzzTest\FizzBuzzTest.csproj", "{DE9B5536-0F5E-48FC-911A-F27544F787D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JazzFuzz", "JazzFuzz\JazzFuzz.csproj", "{E73B9B95-87CE-47F4-8EDA-8B5BF0DAFFD8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JazzFuzzTest", "JazzFuzzTest\JazzFuzzTest.csproj", "{46DC3416-A8E6-41C0-A9D2-43DE51253385}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 Simple FizzBuzz", "1 Simple FizzBuzz", "{878E180B-DD45-4C78-9514-7919A208202B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 FizzJazzFuzzBuzz", "2 FizzJazzFuzzBuzz", "{FB647143-699A-4673-994C-86D53F152178}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E5B4AF57-68F4-484F-A624-721A592FEDFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5B4AF57-68F4-484F-A624-721A592FEDFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5B4AF57-68F4-484F-A624-721A592FEDFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5B4AF57-68F4-484F-A624-721A592FEDFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE9B5536-0F5E-48FC-911A-F27544F787D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE9B5536-0F5E-48FC-911A-F27544F787D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE9B5536-0F5E-48FC-911A-F27544F787D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE9B5536-0F5E-48FC-911A-F27544F787D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E73B9B95-87CE-47F4-8EDA-8B5BF0DAFFD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E73B9B95-87CE-47F4-8EDA-8B5BF0DAFFD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E73B9B95-87CE-47F4-8EDA-8B5BF0DAFFD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E73B9B95-87CE-47F4-8EDA-8B5BF0DAFFD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46DC3416-A8E6-41C0-A9D2-43DE51253385}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46DC3416-A8E6-41C0-A9D2-43DE51253385}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46DC3416-A8E6-41C0-A9D2-43DE51253385}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46DC3416-A8E6-41C0-A9D2-43DE51253385}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E5B4AF57-68F4-484F-A624-721A592FEDFD} = {878E180B-DD45-4C78-9514-7919A208202B}
+		{DE9B5536-0F5E-48FC-911A-F27544F787D5} = {878E180B-DD45-4C78-9514-7919A208202B}
+		{E73B9B95-87CE-47F4-8EDA-8B5BF0DAFFD8} = {FB647143-699A-4673-994C-86D53F152178}
+		{46DC3416-A8E6-41C0-A9D2-43DE51253385} = {FB647143-699A-4673-994C-86D53F152178}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {02520202-B2D3-40D1-A052-8A7990DDD0CC}
+	EndGlobalSection
+EndGlobal
