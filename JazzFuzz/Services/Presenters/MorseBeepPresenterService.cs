@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text;
 using System.Threading;
 
 namespace JazzFuzz.Services.Presenters
@@ -15,9 +16,9 @@ namespace JazzFuzz.Services.Presenters
             {'a', ".-"}, {'b', "-..."}, {'c', "-.-."}, {'d', "-.."}, {'e', "."}, {'f', "..-."}, {'g', "--."},
             {'h', "...."}, {'i', ".."}, {'j', ".---"}, {'k', "-.-"}, {'l', ".-.."}, {'m', "--"}, {'n', "-."},
             {'o', "---"}, {'p', ".--."}, {'q', "--.-"}, {'r', ".-."}, {'s', "..."}, {'t', "-"}, {'u', "..-"},
-            {'v', "...-"}, {'w', ".--"}, {'x', "-..-"}, {'y', "-.--"}, {'z', "--.."}, {'0', "-----"}, {'1', ".----"},
-            {'2', "..---"}, {'3', "...--"}, {'4', "....-"}, {'5', "....."}, {'6', "-...."}, {'7', "--..."}, {'8', "---.."},
-            {'9', "----." }
+            {'v', "...-"}, {'w', ".--"}, {'x', "-..-"}, {'y', "-.--"}, {'z', "--.."}, {'0', "-----"},
+            {'1', ".----"}, {'2', "..---"}, {'3', "...--"}, {'4', "....-"}, {'5', "....."}, {'6', "-...."},
+            {'7', "--..."}, {'8', "---.."}, {'9', "----." }
         };
 
         public void Present(IEnumerable<string> values)
@@ -30,19 +31,19 @@ namespace JazzFuzz.Services.Presenters
 
         private void TranslateAndPlayMorse(string value)
         {
-            var morseCode = TranslateMorse(value);
             DisplayOriginalValue(value);
-            PlayMorse(morseCode);
+            var morseWord = TranslateMorse(value);
+            PlayMorseWord(morseWord);
         }
 
         private string TranslateMorse(string value)
         {
-            string output = null;
+            var sb = new StringBuilder();
             foreach (var character in value.ToLower())
             {
-                output += _morseLookupDictionary[character] + " ";
+                sb.Append(_morseLookupDictionary[character] + " ");
             }
-            return output;
+            return sb.ToString();
         }
 
         private void DisplayOriginalValue(string value)
@@ -50,9 +51,9 @@ namespace JazzFuzz.Services.Presenters
             Console.Write(value + ": ");
         }
 
-        private void PlayMorse(string morseCode)
+        private void PlayMorseWord(string morseWord)
         {
-            foreach(var character in morseCode)
+            foreach(var character in morseWord)
             {
                 Console.Write(character);
                 if (character.Equals('.'))
@@ -68,8 +69,8 @@ namespace JazzFuzz.Services.Presenters
                     Thread.Sleep(3*TimeUnitMs);
                 }
             }
-            Thread.Sleep(7*TimeUnitMs);
             Console.WriteLine();
+            Thread.Sleep(7*TimeUnitMs);
         }
     }
 }
