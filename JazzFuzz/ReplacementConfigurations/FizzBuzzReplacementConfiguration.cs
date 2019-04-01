@@ -8,8 +8,8 @@ namespace JazzFuzz.ReplacementConfigurations
         {
             return new List<(int Number, string Text)>()
             {
-                (Number: 3, Text: "Fizz"),
-                (Number: 5, Text: "Buzz")
+                (3, "Fizz"),
+                (5, "Buzz")
             };
         }
     }
