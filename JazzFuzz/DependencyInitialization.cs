@@ -11,10 +11,10 @@ namespace JazzFuzz
         public static ServiceProvider SetupDependencies()
         {
             IServiceCollection services = new ServiceCollection();
-            services.AddSingleton<IRangeConfiguration, AscendingRangeConfiguration>();
+            services.AddSingleton<IRangeConfiguration, DescendingRangeConfiguration>();
             services.AddSingleton<IReplacementConfiguration, JazzFuzzReplacementConfiguration>();
             services.AddSingleton<IGeneratorService, GeneratorService>();
-            services.AddSingleton<IPresenterService, MorseBeepPresenterService>();
+            services.AddSingleton<IPresenterService, ConsolePresenterService>();
             return services.BuildServiceProvider();
         }
     }
